@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app light>
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
         <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
@@ -12,25 +12,15 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar :clipped-left="clipped" fixed app>
+    <!-- <v-toolbar :clipped-left="clipped" fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>remove</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>menu</v-icon>
-      </v-btn>
-    </v-toolbar>
+    </v-toolbar> -->
     <v-content>
-      <v-container>
+      <v-container pa-0 ma-0>
         <nuxt />
       </v-container>
     </v-content>
@@ -44,9 +34,6 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2019</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -60,18 +47,13 @@ export default {
       items: [
         {
           icon: "apps",
-          title: "Welcome",
+          title: "Home",
           to: "/"
         },
         {
           icon: "bubble_chart",
-          title: "Inspire",
-          to: "/inspire"
-        },
-        {
-          icon: "bubble_chart",
-          title: "Login",
-          to: "/login"
+          title: "Sign In",
+          to: "/sign-in"
         },
         {
           icon: "bubble_chart",
@@ -87,7 +69,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Vuetify.js"
+      title: "AgoraID"
     };
   }
 };
