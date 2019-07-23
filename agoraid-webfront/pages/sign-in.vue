@@ -25,7 +25,7 @@
           </v-flex>
         </v-flex>
         <v-flex xs12 md4 justify-end>
-          <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="" width="100%" height="700px">
+          <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="" width="100%">
         </v-flex>
       </v-layout>
     </v-container>
@@ -46,5 +46,5 @@ export default {};
    text-align: center;
  }
  img {margin-bottom: 30px;}
- .left-side {margin-top: 150px;}
+ .left-side {margin-top: 50px;}
 </style>

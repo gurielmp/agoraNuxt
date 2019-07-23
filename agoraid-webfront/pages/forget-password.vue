@@ -17,7 +17,7 @@
             </v-flex>
         </v-flex>
         <v-flex xs12 md4>
-            <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="">
+            <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="" width="100%">
         </v-flex>
       </v-layout>
     </v-container>
