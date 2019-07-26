@@ -13,5 +13,4 @@ export default {};
 </script>
 
 <style>
-    img {margin-bottom: 30px;}
 </style>

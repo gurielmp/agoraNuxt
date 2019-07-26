@@ -20,7 +20,7 @@
       <v-spacer />
     </v-toolbar> -->
     <v-content>
-      <v-container>
+      <v-container pa-0 mr-0>
         <nuxt />
       </v-container>
     </v-content>

@@ -1,12 +1,12 @@
 <template>
   <v-flex xs12 md8 class="center">
-    <v-flex md8 justify-center row class="left-side">
-      <img src="https://agora.id/wp-content/uploads/2019/07/agora-logo-cropped@2x.png" alt />
+    <v-flex md8 px-4 px-5 justify-center row class="left-side">
+      <img class="img-logo" src="~/assets/images/agora-logo-cropped.png" alt />
       <b>
         <p>Welcome, Please login to continue</p>
       </b>
       <form>
-        <v-text-field v-model="email" label="E-mail" required></v-text-field>
+        <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
         <v-text-field v-model="password" type="password" label="Password" required></v-text-field>
         <v-btn @click="submit" class="bg-agora">LOGIN</v-btn>
       </form>
@@ -24,7 +24,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data: () => ({
+      valid: false,
+      email: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid',
+      ],
+    }),
+  }
 </script>
 
 <style>
@@ -35,4 +44,5 @@ export default {};
 }
 p {font-family: "Montserrat", sans-serif;}
 .left-side {margin-top: 50px;}
+.img-logo {margin: 30px 0;}
 </style>

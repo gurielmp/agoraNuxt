@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container pt-0>
+    <v-container pa-0>
       <v-layout row wrap>
         <Signin/>
         <Formbg/>
