@@ -28,7 +28,7 @@
             </form>
             <p>or Register with</p>
             (spot logo)
-            <p>Already have account? Login</p>
+            <p>Already have account? <nuxt-link to="/">Login</nuxt-link></p>
           </v-flex>
         </v-flex>
         <v-flex xs12 md4>

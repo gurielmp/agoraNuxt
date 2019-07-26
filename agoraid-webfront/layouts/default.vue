@@ -1,6 +1,6 @@
 <template>
   <v-app light>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
+    <!-- <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
         <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-tile-action>
@@ -11,14 +11,14 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
-    <v-toolbar :clipped-left="clipped" fixed app>
+    </v-navigation-drawer> -->
+    <!-- <v-toolbar :clipped-left="clipped" fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-spacer />
-    </v-toolbar>
+    </v-toolbar> -->
     <v-content>
       <v-container>
         <nuxt />
@@ -34,9 +34,9 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
+    <!-- <v-footer :fixed="fixed" app>
       <span>&copy; 2019</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 

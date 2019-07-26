@@ -1,18 +1,28 @@
 <template>
   <div>
-    <v-container>
+    <v-container pt-0>
       <v-layout row wrap>
-        <v-flex xs12 md12 center>
-          <img src="https://agora.id/wp-content/uploads/2019/07/agora-logo-cropped@2x.png" alt="">
-        </v-flex>
+        <Signin/>
+        <Formbg/>
       </v-layout>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+import Signin from '~/components/Signin.vue';
+import Formbg from '~/components/Formbg.vue';
+export default {
+  components: {
+    Signin,
+    Formbg
+  }
+};
 </script>
 
 <style>
+ .center {
+   text-align: center;
+ }
+ 
 </style>
