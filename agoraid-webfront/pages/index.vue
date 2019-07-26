@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container pa-0>
+    <v-container pa-0 class="bg-white">
       <v-layout row wrap>
         <Signin/>
         <Formbg/>
@@ -24,5 +24,5 @@ export default {
  .center {
    text-align: center;
  }
- 
+ .bg-white {background-color: white;}
 </style>

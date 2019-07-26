@@ -1,47 +1,25 @@
 <template>
   <div>
-    <v-container>
+    <v-container pa-0 class="bg-white">
       <v-layout row wrap>
-        <v-flex xs12 md8 class="center">
-            <v-flex md8 justify-center row>
-                <h1>Create an account</h1>
-                <p justify-center>You’ll need an account to get to your courses</p>
-                <form>
-                <v-text-field
-                v-model="email"
-                label="E-mail"
-                required
-                ></v-text-field>
-                <v-text-field
-                v-model="password"
-                type="password"
-                label="Password"
-                required
-                ></v-text-field>
-                <v-text-field
-                v-model="password"
-                type="password"
-                label="Confirm Password"
-                required
-                ></v-text-field>
-                <v-btn @click="submit" class="bg-agora">Register</v-btn>
-            </form>
-            <p>or Register with</p>
-            (spot logo)
-            <p>Already have account? <nuxt-link to="/">Login</nuxt-link></p>
-          </v-flex>
-        </v-flex>
-        <v-flex xs12 md4>
-            <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="" width="100%">
-        </v-flex>
+        <Signup/>
+        <Formbg/>
       </v-layout>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+import Signup from '~/components/Signup.vue';
+import Formbg from '~/components/Formbg.vue';
+export default {
+  components: {
+    Signup,
+    Formbg
+  }
+};
 </script>
+
 <style>
     .bg-agora {
         background-color: #BB2C4B !important;

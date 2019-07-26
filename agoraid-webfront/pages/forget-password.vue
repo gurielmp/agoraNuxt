@@ -1,31 +1,23 @@
 <template>
   <div>
-    <v-container>
+    <v-container pa-0>
       <v-layout row wrap>
-        <v-flex xs12 md8 class="center">
-            <v-flex md6 justify-center row>
-                <h1>forgot password</h1>
-                <p class="c-agora">Don’t worry, please type your active email used for register</p>
-                <form>
-                <v-text-field
-                v-model="email"
-                label="E-mail"
-                required
-                ></v-text-field>
-                <v-btn @click="submit" class="bg-agora">submit</v-btn>
-                </form>
-            </v-flex>
-        </v-flex>
-        <v-flex xs12 md4>
-            <img src="https://steveweddingphoto.com/wp-content/uploads/2018/06/MG_8913.jpg" alt="" width="100%">
-        </v-flex>
+        <Forget/>
+        <Formbg/>
       </v-layout>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+import Forget from '~/components/Forget.vue';
+import Formbg from '~/components/Formbg.vue';
+export default {
+  components: {
+    Forget,
+    Formbg
+  }
+};
 </script>
 
 <style scoped>

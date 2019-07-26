@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 md4 justify-end>
+  <v-flex md4 justify-end hidden-sm-and-down>
     <img
       src="~/assets/images/rectangle46@2x.png"
       alt

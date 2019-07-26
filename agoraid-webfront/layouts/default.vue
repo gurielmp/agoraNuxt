@@ -19,7 +19,7 @@
       </v-btn>
       <v-spacer />
     </v-toolbar> -->
-    <v-content>
+    <v-content class="bg-white">
       <v-container pa-0 mr-0>
         <nuxt />
       </v-container>
